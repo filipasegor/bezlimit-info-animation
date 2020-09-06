@@ -94,19 +94,36 @@ p{
 
 
   @-webkit-keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
+    0%{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        animation-timing-function: ease-in;
+        opacity: 0;
+      }
+      35%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        animation-timing-function: ease-out;
+        opacity: 1;
+      }
+      55%{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        animation-timing-function: ease-in;
+      }
+      70%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        animation-timing-function: ease-out;
+      }
+      80%{
+        -webkit-transform: scale(1.24);
+        transform: scale(1.24);
+        animation-timing-function: ease-in;
+      }
+      100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        animation-timing-function: ease-out;
+      }
+    }
